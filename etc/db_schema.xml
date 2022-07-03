@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Francisco Espinosa <paco_espinosa.21@outlook.com>
+ * @copyright   Copyright © Concentrix. All rights reserved. 
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="concentrix_corporate_group" resource="default" engine="innodb" comment="Concentrix Corporate Group Entity">
+        <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="true"/>
+        <column xsi:type="varchar" name="internal_code" nullable="false" length="255" comment="Corporate Group Internal Code"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Corporate Group Name"/>
+        <column xsi:type="varchar" name="email" nullable="false" length="255" comment="Corporate Group Contact Email"/>
+        <column xsi:type="varchar" name="telephone" nullable="false" length="255" comment="Corporate Group Contact Phone Number"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="INTERNAL_CODE">
+            <column name="internal_code"/>
+        </constraint>
+    </table>
+</schema>

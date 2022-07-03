@@ -1,0 +1,15 @@
+{
+    "concentrix_corporate_group": {
+        "column": {
+            "entity_id": true,
+            "internal_code": true,
+            "name": true,
+            "email": true,
+            "telephone": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "CONCENTRIX_CORPORATE_GROUP_INTERNAL_CODE": true
+        }
+    }
+}

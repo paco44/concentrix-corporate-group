@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Francisco Espinosa <paco_espinosa.21@outlook.com>
+ * @copyright   Copyright © Concentrix. All rights reserved. 
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Concentrix\CorporateGroup\Api\CorporateGroupRepositoryInterface" type="Concentrix\CorporateGroup\Model\CorporateGroupRepository"/>
+
+    <preference for="Concentrix\CorporateGroup\Api\Data\CorporateGroupInterface" type="Concentrix\CorporateGroup\Model\CorporateGroup"/>
+
+    <preference for="Concentrix\CorporateGroup\Api\Data\CorporateGroupSearchResultInterface" type="Concentrix\CorporateGroup\Model\CorporateGroupSearchResult"/>
+</config>
