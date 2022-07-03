@@ -37,7 +37,7 @@ The urls must be formed in the following way:
 
 For the definition of the endpoints of this web API in a visual way, you can access the **Swagger UI** of Magento at:
 
-`http://<magento_url>/swagger/#/concentrixCorporateGroupCorporateGroupRepositoryV1
+`http://<magento_url>/swagger/#/concentrixCorporateGroupCorporateGroupRepositoryV1`
 
 ![Swagger api definition](/swagger.png)
 
