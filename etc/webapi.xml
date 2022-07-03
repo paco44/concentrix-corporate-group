@@ -9,42 +9,42 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
 
-   <route url="/V1/concetrix/corporate-groups" method="POST">
+   <route url="/V1/concentrix/corporate-groups" method="POST">
         <service class="Concentrix\CorporateGroup\Api\CorporateGroupRepositoryInterface" method="save"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
 
-    <route url="/V1/concetrix/corporate-groups/:internalCode" method="GET">
+    <route url="/V1/concentrix/corporate-groups/:internalCode" method="GET">
         <service class="Concentrix\CorporateGroup\Api\CorporateGroupRepositoryInterface" method="getByInternalCode"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
 
-    <route url="/V1/concetrix/corporate-groups" method="PUT">
+    <route url="/V1/concentrix/corporate-groups" method="PUT">
         <service class="Concentrix\CorporateGroup\Api\CorporateGroupRepositoryInterface" method="delete"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
 
-    <route url="/V1/concetrix/corporate-groups" method="GET">
+    <route url="/V1/concentrix/corporate-groups" method="GET">
         <service class="Concentrix\CorporateGroup\Api\CorporateGroupRepositoryInterface" method="getList"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
 
-    <route url="/V1/concetrix/corporate-groups/link-customer-by-id" method="POST">
+    <route url="/V1/concentrix/corporate-groups/link-customer-by-id" method="POST">
         <service class="Concentrix\CorporateGroup\Api\CorporateGroupRepositoryInterface" method="linkToCustomerById"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
 
-    <route url="/V1/concetrix/corporate-groups/link-customer-by-email" method="POST">
+    <route url="/V1/concentrix/corporate-groups/link-customer-by-email" method="POST">
         <service class="Concentrix\CorporateGroup\Api\CorporateGroupRepositoryInterface" method="linkToCustomerByEmail"/>
         <resources>
             <resource ref="anonymous"/>
