@@ -2,6 +2,12 @@
     "name": "concentrix/module-corporate-group",
     "description": "Corporate Group Module",
     "type": "magento2-module",
+    "authors": [
+      {
+          "name": "Francisco Espinosa",
+          "email": "paco_espinosa.21@outlook.com"
+        }
+    ],
     "license": [
         "OSL-3.0",
         "AFL-3.0"
