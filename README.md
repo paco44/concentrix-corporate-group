@@ -13,6 +13,10 @@ In the root directory of magento, execute the following command:
 
 `composer require concentrix/module-corporate-group`
 
+If there are any problems trying to install this package, update to the latest version of composer
+
+`composer self-update --2`
+
 
 **Git**
 
